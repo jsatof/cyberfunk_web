@@ -1,4 +1,4 @@
-#!/run/media/jsferrarelli/hdd0/develop/cyberfunk/venv/bin/python
+#!/run/media/jsferrarelli/hdd0/develop/cyberfunk/web/venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
