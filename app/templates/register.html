@@ -8,7 +8,7 @@
 {% body_content %}
 	
 	<center>
-		<h2>Login</h2>
+		<h2>Register</h2>
 		<form>
 			<div class="form-group">
 				<label for="usernameInput">Username</label>
@@ -19,7 +19,7 @@
 				<input type="password" class="form-control" id="passwordInput" placeholder="Enter Password">
 			</div>
 
-			<a href="{{ url_for('register.html') }}">Register</a>
+			<a href="{{ url_for('login') }}">Already Have an Account?</a>
 
 			<button type="submit" class="btn btn-button-primary">Submit</button>
 		</form>
