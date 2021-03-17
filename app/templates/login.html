@@ -1,0 +1,28 @@
+{% extends layout.html %}
+
+{% page_title %}
+	Cyberfunk - Login
+{% endblock %}
+
+
+{% body_content %}
+	
+	<center>
+		<h2>Login</h2>
+		<form>
+			<div class="form-group">
+				<label for="usernameInput">Username</label>
+				<input type="text" class="form-control" id="usernameInput" placeholder="Enter Username">
+			</div>
+			<div class="form-group">
+				<label for="passwordInput">Password</label>
+				<input type="password" class="form-control" id="passwordInput" placeholder="Enter Password">
+			</div>
+
+			<a href="{{ url_for('register') }}">Register</a>
+
+			<button type="submit" class="btn btn-button-primary">Submit</button>
+		</form>
+	</center>
+
+{% endblock %}
