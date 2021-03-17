@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 from flask_restful import Resource, Api, reqparse
 import psycopg2
 import os
@@ -18,14 +18,14 @@ def index():
 # API Routes are below
 class Login(Resource):
     def post(self):
-        args = parser.parse_args()
+        json_data = request.get_json(force = True)
         
         # STUB: check for valid args
 
-        uname = args["username"]
-        pword = args["password"]
+        uname = json_data["username"]
+        pword = json_data["password"]
 
-
+        return jsonify(userame = uname, password = pword)
 
 api.add_resource(Login, "/api/login")
 
