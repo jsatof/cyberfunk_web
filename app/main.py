@@ -3,7 +3,7 @@ from flask_restful import Resource, Api, reqparse
 import psycopg2
 import os
 
-import create_tables
+from database_functions import *
 
 app = Flask(__name__)
 api = Api(app)
