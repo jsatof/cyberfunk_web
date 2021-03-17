@@ -27,7 +27,7 @@ class Login(Resource):
 
 
 
-app.add_resource(Login, "/api/login")
+api.add_resource(Login, "/api/login")
 
 
 # Database Functions
