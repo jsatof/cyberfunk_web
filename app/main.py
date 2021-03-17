@@ -8,7 +8,6 @@ api = Api(app)
 
 DATABASE_URL = os.environ["DATABASE_URL"]
 connection = psycopg2.connect(DATABASE_URL, sslmode = "require")
-create_tables(connection)
 
 parser = reqparse.RequestParser()
 
