@@ -9,6 +9,9 @@
 	
 	<center>
 		<h2>Login</h2>
+		{% if message %}
+			<p class="message">{{ message | safe }}</p>
+		{% endif %}
 		<form>
 			<div class="form-group">
 				<label for="usernameInput">Username</label>
