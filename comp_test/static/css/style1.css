@@ -1,0 +1,64 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: sans-serif;
+	font-size: 16px;
+	color:darkmagenta;
+	background: url('static/css/disco.jpg.jpg') no-repeat;
+	background-size: cover;
+}
+.box{
+	width: 80%;
+	height: 600px;
+	display: inline-block;
+	margin: 50px 10%;
+	background-color: #fff;
+	box-shadow: 0 27px 87px rgba(0,0,0,0.37);
+	border-radius: 15px;
+	overflow: hidden;
+	
+}
+.box-img{
+	float:left;
+	width:45%;
+}
+.box-text{
+	width:55%;
+	float: left;
+	padding: 70px 70px 70px 35px;
+}
+.box-text h1{
+	font-size: 48px;
+	font-weight: bold;
+	color: lightseagreen;
+	margin-bottom: 45px;
+}
+.box-text p{
+	font-size: 14px;
+	font-weight: 300;
+	color: lightseagreen;
+	line-height: 30px;
+	letter-spacing: .25px;
+	margin-bottom: 15px;
+}
+.box-text .Social{
+	margin-top: 40px;
+}
+.box-text .Social a{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background: linear-gradient(45deg, #f802f5, #1c79e2);
+	border-radius: 50%;
+	color: #fff;
+	font-size: 28px;
+	text-align: center;
+	line-height: 50px;
+	margin: 0 15px 0 0;
+}
+.box-text .Social a:hover{
+	transform: rotate(360deg);
+}
