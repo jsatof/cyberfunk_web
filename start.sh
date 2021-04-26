@@ -1,2 +1,2 @@
 #!/bin/bash
-gunicorn3 app:application
+gunicorn3 application:application
