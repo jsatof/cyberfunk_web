@@ -8,8 +8,9 @@ Cyberfunk
 {% block body_content %}
 
 <center>
-<h1>Recent Scores</h1>
-<table class="table leaderboard">
+	<div class="leaderboard">
+<h1 style="color: #ddd">Recent Scores</h1>
+<table class="table" style="color: #ddd;">
     <thead>
         <tr>
 			<th scope="col">Name</th>
@@ -32,6 +33,7 @@ Cyberfunk
 		{% endfor %}
     </tbody>
 </table>
+	</div>
 </center>
 
 {% endblock %}

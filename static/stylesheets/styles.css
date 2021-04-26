@@ -1,5 +1,22 @@
 body {
-	
+	background: url('/static/vaporwave_wallpaper.jpg') no-repeat;
+	background-size: cover;	
+}
+
+table {
+	table-layout: fixed;
+	width: 100%;
+}
+
+h1, p, thead, th, td {
+	color: #ddd !important;
+}
+
+ td, th {
+	border-style: solid;
+	border-width: 3px;
+	border-color: #000;
+	word-wrap: break-word;
 }
 
 .mynavbar {
@@ -7,6 +24,7 @@ body {
 }
 
 .leaderboard {
-	padding-left: 5%;
-	padding-right: 5%;
+	background: rgba(0,0,0, 0.5);
+	width: 60% !important;
+	margin-top: 2%;
 }
