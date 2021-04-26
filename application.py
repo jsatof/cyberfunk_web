@@ -21,7 +21,7 @@ def index():
     dbcon.row_factory = sqlite3.Row
 
     cursor = dbcon.cursor()
-    cursor.execute("select * from score")
+    cursor.execute("select * from score order by sid desc")
 
     rows = cursor.fetchall()
 

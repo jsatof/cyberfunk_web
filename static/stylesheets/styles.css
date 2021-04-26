@@ -1,7 +1,12 @@
 body {
-	margin: 0.2%;
+	
 }
 
 .mynavbar {
 	background-color: #da0ccd !important;
+}
+
+.leaderboard {
+	padding-left: 5%;
+	padding-right: 5%;
 }
