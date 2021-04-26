@@ -26,6 +26,23 @@ def login_post():
 
     return redirect(url_for('main.profile'))
 
+@auth.route('/login', methods=['POST'])
+def profile_post():
+   
+
+    song_name = request.form.get('song_name')
+    score = request.form.get('score')
+    combo = request.form.get('combo')
+    perfects = request.form.get('perfects')
+    greats = request.form.get('greats')
+    goods = request.form.get('goods')
+    misses = request.form.get('misses')
+    uid = request.form.get('uid')
+
+    user = User.query.filter_by(song_name=song_name).first()
+
+
+    return redirect(url_for('main.profile'))
 @auth.route('/signup')
 def signup():
     return render_template('signup.html')
