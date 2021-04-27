@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="column is-4 is-offset-4">
+    <h3 class="title">CyberFunk</h3>
+    <div class="box">
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <div class="notification is-danger">
+                {{ messages[0] }} Go to <a href="{{ url_for('auth.login') }}">login page</a>.
+            </div>
+        {% endif %}
+        {% endwith %}
+        <form class="form" action="/signup" method="POST">
+            <h2>Sign up</h2>
+            <div class="field">
+                <div class="input-group">
+                    <input class="input is-large" type="text" name="email" placeholder="Your Email" autofocus="" required>
+                </div>
+            </div>
+
+            <div class="field">
+                <div class="input-group">
+                    <input class="input is-large" type="text" name="name" placeholder="Name" autofocus="" required>
+                </div>
+            </div>
+
+            <div class="field">
+                <div class="input-group">
+                    <input class="input is-large" type="password" name="password" placeholder="Password" required>
+                </div>
+            </div>
+
+            <button class="button is-block is-info is-large is-fullwidth">Sign Up</button>
+        </form>
+        <div id="registration">
+            <form action="" class="form-box">
+                <a href="#" class="close">&times;</a>
+                <h2>Register Here!</h2>
+                <div class="input-group">
+                    <input type="UserID" name="UserID" id="UserID" required>
+                    <label for="UserID">User ID</label>
+                </div>
+                <div class="input-group">
+                    <input type="password" name="password" id="password" required>
+                    <label for="password">Password</label>
+                </div>
+                <div class="input-group">
+                    <input type="email" name="email" id="email" required>
+                    <label for="email">Email</label>
+                </div>
+                <div>
+                    <input type="checkbox" class="checkbox-box"><span>Agree to terms and conditions</span>
+                </div>
+                <input type="submit" value="Submit" class="submit-btn">
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
